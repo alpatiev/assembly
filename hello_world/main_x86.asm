@@ -8,7 +8,7 @@ start:
     mov     rax, 0x2000004 # MacOS write syscall 4     
     mov     rdi, 1         
     lea     rsi, [rip +.LC0] # String source
-    mov     rdx, 21 # String length
+    mov     rdx, 22 # String length
     syscall
 
     mov     rax, 0x2000001 # MacOS write syscall 1 
